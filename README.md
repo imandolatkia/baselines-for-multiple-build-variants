@@ -5,6 +5,7 @@ create baseline files for each build variants dynamically for android linter
 1- add the following function to your app-level build.gradle file:
 
 ```Gradle
+def getPath() {
     Gradle gradle = getGradle()
     String tskReqStr = gradle.getStartParameter().getTaskRequests().toString()
     Pattern pattern
@@ -29,6 +30,7 @@ create baseline files for each build variants dynamically for android linter
         }
     }
     return "lint-baselines/${fileName}.xml"
+}
 ```
 this function creates a specific path for each build variants.
 you can customize the file name by changing the "fileName" variable.
