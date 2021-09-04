@@ -1,4 +1,4 @@
-# Android build variants baselines for linter
+# Build Variants Baselines For Android Linter
 create baseline files for each build variants dynamically for android linter
 
 # how to use?
