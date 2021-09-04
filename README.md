@@ -1,7 +1,33 @@
 # Build Variants Baselines For Android Linter
-create baseline files for each build variants dynamically for android linter
+Create baseline files for each build variants dynamically for android linter
+<br/><br/>
 
-# how to use?
+# What Is Android Lint?
+Easy learning:  https://medium.com/swlh/what-is-android-lint-17fa0d87abb2
+
+Official google doc: https://developer.android.com/studio/write/lint
+<br/><br/>
+
+# What is Baseline?
+according to google doc: You can take a snapshot of your project's current set of warnings, and then use the snapshot as a baseline for future inspection runs so that only new issues are reported. The baseline snapshot lets you start using lint to fail the build without having to go back and address all existing issues first.
+To create a baseline snapshot, modify your project's build.gradle file as follows.
+```Groovy
+android {
+    lintOptions {
+        baseline file("lint-baseline.xml")
+    }
+}
+```
+<br/><br/>
+
+# What is the problem?
+If you have multiple build variants in your app and have specific codes for them, you can't create a separate baseline for them.
+Because, according to the google doc, you can define only one baseline in the project.
+It means that every time you change build variants, you may see a new lint error that is not in the baseline.
+<br/><br/>
+
+
+# How solve the problem?
 1- add the following function to your app-level build.gradle file:
 
 ```Gradle
