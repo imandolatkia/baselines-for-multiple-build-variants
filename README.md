@@ -1,5 +1,5 @@
 # Baselines For Multiple Build Variants (For Android Lint)
-Create baseline files dynamically for each build variants. It use for android linter
+Create android lint baselines dynamically for each build variants.
 <br/><br/>
 
 ![2222222](https://user-images.githubusercontent.com/6734608/132840884-700fc464-b960-4000-a79d-b3853ddc38cc.jpg)
