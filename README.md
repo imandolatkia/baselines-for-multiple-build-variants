@@ -5,10 +5,10 @@ Create android lint baselines dynamically for each build variants.
 ![2222222](https://user-images.githubusercontent.com/6734608/132840884-700fc464-b960-4000-a79d-b3853ddc38cc.jpg)
 
 
-# 1- What Is Android Lint?
-Lint Easy learning:  https://medium.com/swlh/what-is-android-lint-17fa0d87abb2
+# 1- What is android lint?
+Lint easy learning:  https://medium.com/swlh/what-is-android-lint-17fa0d87abb2
 
-Lint Official google doc: https://developer.android.com/studio/write/lint
+Lint official google doc: https://developer.android.com/studio/write/lint
 <br/><br/>
 
 ## What is Baseline?
